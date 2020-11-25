@@ -1,0 +1,10 @@
+<div>
+    <h3>Colors:</h3>
+    <ul>
+        <li *ngFor="let color of colors">{{color}}</li>
+    </ul>
+    <h3>Cars:</h3>
+    <div class="car-container">
+        <app-car *ngFor="let color of colors" [color] = "color" (addColor)="addToColors($event)"></app-car>
+    </div>
+</div>

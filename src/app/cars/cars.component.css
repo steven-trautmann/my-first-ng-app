@@ -1,0 +1,6 @@
+.car-container {
+  border: solid black 0.1rem;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
