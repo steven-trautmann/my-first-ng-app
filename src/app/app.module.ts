@@ -13,7 +13,8 @@ import { HttpClientModule } from "@angular/common/http";
     CarComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

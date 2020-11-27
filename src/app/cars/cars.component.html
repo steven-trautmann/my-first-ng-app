@@ -7,4 +7,13 @@
     <div class="car-container">
         <app-car *ngFor="let color of colors" [color] = "color" (addColor)="addToColors($event)"></app-car>
     </div>
+    <h3>post new car name to backend</h3>
+    <input type="text" (keyup)="onNameKeyUp($event)" value={{name}}>
+    <button (click)="postNew()">Post new Car</button>
+
+    <h3>Get sample car from backend</h3>
+    <p style="margin: 0;" *ngIf="sampleName !== ''; else button">{{sampleName}}</p>
+    <ng-template #button>
+        <button (click)="getSample()">Get sample</button>
+    </ng-template>
 </div>
