@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {SentenceService} from "../service/sentence.service";
 
 @Component({
   selector: 'app-user-list',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./user-list.component.css']
 })
 export class UserListComponent implements OnInit {
+  sentence:string;
 
   users = [
     {name: "Tamara", age: 10},
@@ -14,7 +16,9 @@ export class UserListComponent implements OnInit {
     {name: "Thordon", age: 21},
 ]
 
-  constructor() { }
+  constructor(private sentenceService:SentenceService) {
+    this.sentence = this.sentenceService.getRandom();
+  }
 
   ngOnInit(): void {
   }

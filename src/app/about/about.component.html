@@ -1,3 +1,7 @@
 <div class="about-container">
     <h1>Page made with Angular, by Isti</h1>
+    <p>random motivational sentence: {{sentence}}</p>
+    <button (click)="getRandom()">Randomize</button>
+    <input type="text" (keyup)="onInputSentenceChange($event)" value="{{inputSentence}}" />
+    <button (click)="addSentenceToService()">add new sentence</button>
 </div>

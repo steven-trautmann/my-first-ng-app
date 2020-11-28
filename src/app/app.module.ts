@@ -9,6 +9,7 @@ import {RouterModule, Routes} from "@angular/router";
 import { AboutComponent } from './about/about.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { UserDetailComponent } from './user-detail/user-detail.component';
+import { SentenceService } from "./service/sentence.service";
 
 const appRoutes:Routes = [
   {path: "home", component: CarsComponent},
@@ -36,7 +37,7 @@ const appRoutes:Routes = [
     HttpClientModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [SentenceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
