@@ -1,0 +1,10 @@
+<div class="user-list">
+    <h1>User List:</h1>
+    <ul>
+        <li *ngFor="let userListItem of users">
+            <p>name: <a [routerLink]="['detail', userListItem.name]">{{userListItem.name}}</a></p>
+            <p>age: {{userListItem.age}}</p>
+        </li>
+    </ul>
+    <router-outlet></router-outlet>
+</div>

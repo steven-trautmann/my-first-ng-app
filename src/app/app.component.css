@@ -1,4 +1,13 @@
-.main-container {
-  border: solid red 0.2rem;
-  padding: 2rem;
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+a {
+  flex-basis: 33%;
+}
+
+button {
+  width: 100%;
 }
