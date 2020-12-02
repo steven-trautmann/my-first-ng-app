@@ -1,5 +1,7 @@
+@import "../../vars";
+
 .simple-car {
-  border: solid purple 0.5rem;
+  border: solid $border-color 0.5rem;
   padding: 1rem;
   background-color: gray;
 }
